@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.map{
+        flex: 1;
+        width: 500px;
+        height:680;
+        display: flex;
+        padding: 15px; 
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); 
+        /* width:500px;
+        height:700px;
+        box-shadow:0 0.5rem 1rem rgba(0,0,0,0.15);
+        color :black;
+        background:bisque;
+        
+        padding:45px; */
+        }
+        div.last{
+        width: 250px;
+        height: 250px;
+        display: flex;
+         padding: 45px;
+         flex-flow: column nowrap;
+         justify-content: space-around;
+         align-items: center;
+         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+         background: lightgoldenrodyellow;
+        }
+        div.lastbar{
+          flex: 1;
+         /* width: 100%; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 50px;
+        height: 50vh;
+        margin-top: 10px;
+        /* border: 1px blue solid; */
+        }
+        div.page{
+            display: flex;
+            height: 120vh;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            
+        }
+        div.topbar{
+            border: 2px solid black;
+            background: orange;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            
+    
+        }
+       
+            
+        }
+        div.logo{
+            display: flex;
+            justify-content: flex-start;
+            align-items: left; 
+        }
+        div.titl{
+           
+            font-size: larger;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            /* display: flex;
+    justify-content:space-around;
+    align-items: center; */
+        }
+        div.contact{
+            
+             font-size:17px;
+            /* display: flex;
+             justify-content:space-around;*/
+             margin:80px 0px 0px 520px;
+             align-items:right; 
+        }
+       
+        div.container{
+             font-size: 17px;
+             width:100%;
+             padding-right:8px;
+             padding-left:8px;
+             
+             display: flex;
+             justify-content: space-around;
+             align-items: center;  
+             
+        }    
+        
+       
+        
+        #Soham{
+        width:500px;
+        height:700px;
+        box-shadow:0 0.5rem 1rem rgba(0,0,0,0.15);
+        color :black;
+        background:bisque;
+        /* margin:150px 500px 150px 700px; */
+        padding:45px;
+
+    }
+
+    </style>
+    
+</head>
+<body>
+    <div class="topbar">
+        <div class="logo">
+            <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSX7PJ-NUcbB_xKw_o9XjX6QqGXKDy3Nny-bLbElwo9Wl8V4lof
+            height=120 width=100> 
+        </div>
+        <div class="titl"> 
+            <h2 class="underlined">NETAJI SUBHASH ENGINEERING COLLEGE</h2>
+           <div class="container">
+                <p><b><u><a href="#">Home</a></u></b> </p>
+                <p><b><u><a href="#">About Us</a></u></b></p>
+                <p><b><u><a href="#">Faculties</a></u></b></p>
+                <p><b><u><a href="#">Students</a></u></b></p>
+                <p><b><u><a href="#">Contact</a></u></b></p>
+                <p><b><u><a href="handbook.html" target=blank>Register/Login</a></u></b></p>
+                
+            </div>
+        </div>
+        <div class="contact">
+             
+            <span class="txtfrmt3"><a href=hyperlinked.html><b>Contact us Page</b></a></span>
+        </div>
+        
+    </div>
+    <div class="page">
+       <div class="map">
+      
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.746472949953!2d88.41274391450588!3d22.47615958523249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02722b05a38e87%3A0x276c0d30e6be12ea!2sNetaji%20Subhash%20Engineering%20College!5e0!3m2!1sen!2sin!4v1584711751582!5m2!1sen!2sin" 
+        width="450px"
+        height="500px"frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe>
+       </div>
+        <div id="Soham">
+        <h2><b>Contact Us Form</b></h2>
+        <form  action="contactus.php" method=POST>
+            <b>Name :</b> <br>
+            <input type="text" name="name" placeholder="Enter Your Full Name">
+            <br><br><br>
+            <b>Email :</b> <br>
+            <input type="email" name="email" placeholder="Enter Your Email">
+            <br><br><br>
+            <b>Mobile No:</b> <br>
+            <input type="number" name="phone" placeholder="Enter Your Mobile Number">
+            <br><br><br>
+            <input type="radio" name="user">New User <br>
+            <input type="radio" name="user">Existing User <br>
+            <p><b>State:<b></b></p><select >
+                <option>Select a State </option>
+                <option>Arunachal</option>
+                <option>Bihar</option>
+                <option>Jammu and Kashmir</option>
+                <option>West Bengal</option>
+                <option>Others</option>
+            </select><br><br><br>
+            <p><b>Details:</b></p>
+            <textarea name="Text Input" rows="10" cols="20" placeholder="Enter Details"></textarea>
+                <br><br><br>
+           <input type="submit" value="Submit"><p>  </p>
+           <input type="reset" value="Reset">            
+        </div> 
+    </div>
+          
+    <div class="lastbar">
+        <div class="last">
+            <h2>Campus Tour</h2>
+            <iframe src="https://www.youtube.com/embed/8qI21lKwx00"
+             frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+        <div class="last">
+            <h2>BLOG</h2>
+            <p>
+                Netaji Subhash Engineering College (NSEC) is one of the pioneer technical professional 
+                self-financed and privately managed institutes established in 1998 under Kalyani University.
+                Since 2001 it is affiliated to Maulana Abul Kalam Azad University of Technology (formerly West Bengal University of Technology) 
+                with the approval of All India Council for Technical Education.
+                <a href=https://en.wikipedia.org/wiki/Netaji_Subhash_Engineering_College target=blank>To Know More Click Here</a>
+
+            </p>
+        </div>
+         <div class="last">
+                <h2>Address:</h2>
+                 <h4>Mauza Ranabhutia, Garia, Kolkata, West Bengal 700152</h4>
+        </div>
+    </div>
+</body>
+</html>
