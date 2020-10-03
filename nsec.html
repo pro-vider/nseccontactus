@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NSEC Homepage</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
+
+     
+
+
         div.map{
         flex: 1;
         width: 500px;
@@ -24,14 +29,15 @@
         padding:45px; */
         }
         div.last{
-        width: 250px;
-        height: 250px;
+        width: 25%;
+        height: 30vh;
         display: flex;
-         padding: 45px;
+         padding: 3vh;
          flex-flow: column nowrap;
          justify-content: space-around;
          align-items: center;
-         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+         box-shadow: 5px 8px 7px #525050;
+        text-align: center;
          background: lightgoldenrodyellow;
         }
         div.lastbar{
@@ -61,7 +67,7 @@
             flex-direction: row;
             
     
-        }
+        
        
             
         }
@@ -69,6 +75,7 @@
             display: flex;
             justify-content: flex-start;
             align-items: left; 
+            border-radius: 50%;
         }
         div.titl{
            
@@ -111,15 +118,18 @@
         /* margin:150px 500px 150px 700px; */
         padding:45px;
 
+
+
     }
 
     </style>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
 </head>
 <body>
     <div class="topbar">
         <div class="logo">
-            <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSX7PJ-NUcbB_xKw_o9XjX6QqGXKDy3Nny-bLbElwo9Wl8V4lof
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSX7PJ-NUcbB_xKw_o9XjX6QqGXKDy3Nny-bLbElwo9Wl8V4lof"
             height=120 width=100> 
         </div>
         <div class="titl"> 
@@ -179,14 +189,17 @@
     </div>
           
     <div class="lastbar">
-        <div class="last">
+        <div class="last"data-aos="fade-down"
+        data-aos-duration="3000">
             <h2>Campus Tour</h2>
             <iframe src="https://www.youtube.com/embed/8qI21lKwx00"
              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         </div>
-        <div class="last">
-            <h2>BLOG</h2>
+        <div class="last" data-aos="fade-down"
+        data-aos-duration="3000">
+   
+            <h2>Blog</h2>
             <p>
                 Netaji Subhash Engineering College (NSEC) is one of the pioneer technical professional 
                 self-financed and privately managed institutes established in 1998 under Kalyani University.
@@ -196,10 +209,18 @@
 
             </p>
         </div>
-         <div class="last">
-                <h2>Address:</h2>
+         <div class="last"data-aos="fade-down"
+         data-aos-duration="3000">
+                <h2>Address/h2>
                  <h4>Mauza Ranabhutia, Garia, Kolkata, West Bengal 700152</h4>
         </div>
     </div>
 </body>
+
 </html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+<script>
+    AOS.init();
+  </script>
