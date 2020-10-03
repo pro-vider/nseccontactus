@@ -3,30 +3,58 @@
 <head>
 <meta charset="utf-8">
 <title>contactuspage</title>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <style>
-    #div1{
+    div.container{
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     
+    }
+    div.div1{
         color: blue;
         background: rgb(150, 98, 98);
         width:600px;
+        padding: 2vh;
+        margin: 2vh;
+        text-align: center;
+        font-size: 18px;      
+        box-shadow: 5px 10px 8px #5e5d5d;
+        
 
     }
-    #div2{
+    div.div2{
         color:rgb(1, 1, 27);
         background: rgb(178, 196, 196);
         width:600px;
+        padding: 2vh;
+        margin: 2vh;
+        text-align: center;
+        font-size: 18px;
+        box-shadow: 5px 10px 8px #5e5d5d;
+        
     }
-    #div3{
+    div.div3{
         color:rgb(4, 22, 41);
         background: rgb(175, 115, 115);
         width:600px;
+        padding: 2vh;
+        margin: 2vh;
+        text-align: center;
+        font-size: 18px;
+        box-shadow: 5px 10px 8px #5e5d5d;
+        
     }
     </style>
 <body>
+    <div class="container"> 
+   <h1> Contact to Netaji Subhash Engineering College</h1>
+   
+   <div class="container">
 
-   <h1 align="center "> Contact to Netaji Subhash Engineering College</h1>
-   <br><br>
-   <div align="center">
-   <div id="div1">Academic Contacts<br>
+
+   <div class="div1"data-aos="flip-down">Academic Contacts<br>
 
    Dr. H. K. Mandal<br>
    Director<br>
@@ -34,10 +62,11 @@
    
    Prof. (Dr.) Prof. Tirthankar Datta<br>
    Principal<br>
-   Email:<a>principal@nsec.ac.in</a>, <a> principalnsec152@gmail.com</a><br><br><br><br></div>
+   Email:<a>principal@nsec.ac.in</a>, <a> principalnsec152@gmail.com</a><br><br><br><br>
+</div>
    
    
-   <div id="div2">Administrative Contacts<br>
+   <div class="div2" data-aos="flip-up">Administrative Contacts<br>
    
    Dr. H. K. Mandal<br>
    Director<br>
@@ -45,8 +74,11 @@
    
    Prof. (Dr.) Prof. Tirthankar Datta<br>
    Principal<br>
-   Email: <a> principal@nsec.ac.in</a>,<a>  principalnsec152@gmail.com</a><br><br><br><br></div>
-   <div id="div3">Address
+   Email: <a> principal@nsec.ac.in</a>,<a>  principalnsec152@gmail.com</a><br><br><br><br>
+</div>
+
+
+   <div class="div3"data-aos="flip-down">Address
       Netaji Subhash Engineering College<br>
       Technocity, Panchpota, Garia<br>
       Kolkata 700152<br>
@@ -64,3 +96,9 @@
    
 </body>
 </html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+<script>
+    AOS.init();
+  </script>
